@@ -14,3 +14,13 @@ function linkOver() {
 d3.json('repartition_francais.json', function(err, data) {
   $('#cacao-data-1').text(JSON.stringify(data, null, 2));
 })
+
+function showBlock(imageId) {
+  document.getElementById(imageId).style.display = "block";
+  
+}
+
+function showBlock(imageId) {
+  document.getElementById(imageId).style.display = "block";
+  
+}

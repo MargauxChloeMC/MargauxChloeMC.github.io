@@ -108,3 +108,14 @@ body {
 .hide-me-first {
   display: none;
 }
+
+// Adding a new button color
+.button-pink {
+  border-color: $color-pink-500;
+  background-color: $color-pink-500;
+}
+
+// Adding a box shadow
+.button-shadow {
+  box-shadow: 0 2px 4px $color-gray-400;
+}

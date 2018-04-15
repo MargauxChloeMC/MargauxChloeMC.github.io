@@ -20,7 +20,15 @@ function showBlock(imageId) {
   
 }
 
-function showBlock(imageId) {
-  document.getElementById(imageId).style.display = "block";
-  
-}
+// Clicks on buttons by id
+$("#button1").click(function(){
+    $("#answer1").toggle();
+});
+
+$("#button2").click(function(){
+    $("#answer2").toggle();
+});
+
+$("#button3").click(function(){
+    $("#answer3").toggle();
+});

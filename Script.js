@@ -21,8 +21,8 @@ function showBlock(imageId) {
 }
 
 // Clicks on buttons by id
-$("#button1").click(function(){
-    $("#answer1").toggle();
+$("#button4").click(function(){
+    $("#answer4").toggle();
 });
 
 $("#button2").click(function(){

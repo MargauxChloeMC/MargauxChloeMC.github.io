@@ -1,169 +1,128 @@
-<link rel=stylesheet type="text/css" href="Forme.css">
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<html>
+<head>
+    <link rel=stylesheet type="text/css" href="css/Forme.css">
+    <meta charset="utf-8" />
+    <title>Inégalités Hommes/Femmes en Europe</title>
+</head>
 <script src="Script.js"></script>
+<body>
+<div id='header'>
+  <h1>Inégalités Hommes/Femmes en Europe : Que savez-vous réellement ?</h1>
+  <div id='header_info'>
+    <p>Les inégalités Homme/Femmes constituent un sujet très courant. A tel point qu'il en devient barbant.
+    Mais que savez-vous précisemment ? <br/><strong>Faites le test pour le savoir !</strong> </p>
 
-<h1>Répartition des Français de l'étranger entre 2001 et 2013</h1>
-
- <div class="container">
-    <button id="back"><</button>
-    <button id="next">></button>
-    <img id="image" src="http://www.toutpourpartir.com/wp-content/uploads/2015/04/55315caad06bd.jpg" alt="">
   </div>
-   
+</div>
 <section class="links">
   <!-- you can include the HTML from other pens in your pen -->
-<h2>Répartition en 2013</h2>
-  <p>Commençons par regarder une "photo" de la répartition des Français dans la monde la plus récente dont nous disposons. Selon vous, quelle part de la population active française est expatriée ? Quelles sont les régions du monde préférées des Français pour l'expatriation ?</p>
-  
- <h2>Evolution de la répartition dans le temps</h2>
-  <p> Comment les choix des Français pour l'expatriation ont évolué ? Quels sont les pays qui ont tendance à être délaissés ? Pourquoi ? 
-  Quels sont les pays qui apparaissent de plus en plus attractifs ? Pourquoi ? Quel lien avec leur économie ou les conflits qui y ont lieu ? </p>
+  <div class="question" id="question1">
+    <h2> Question 1: Selon vous, quel est le pays avec le plus grand écart de salaire moyen Hommes/Femmes, hors secteur public ?</h2>
+    <button class='button -salmon center' onclick= "showBlock('answer1')">Malte, car c'est un pays de machos</button>
+    <button class='button -salmon center' onclick= "showBlock('answer2')">La France </button>
+    <button class='button -salmon center' onclick= "showBlock('answer3')">La Bulgarie</button>
+    <!-- <div onclick="showBlock('block1')">Malte, car c'est un pays de machos</div>
+    <div id="block1" class="hide-me-first"> Eh non, c'est étonnament le pays avec le moins de différence !
+    <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
+    <div onclick="showBlock('block2')">La France </div>
+    <div id="block2" class="hide-me-first"> Malheureusement oui
+    <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div> -->
+  </div>
 
-    <p> Question 1: Selon vous, quel est le pays avec le plus grand écart de salaire moyen Hommes/Femmes, hors secteur public ?</p>
-
-<div>
-<div onclick="showBlock('block1')">Malte, car c'est un pays de machos</div>
-</div>
-<div id="block1" class="hide-me-first"> Eh non, c'est étonnament le pays avec le moins de différence !
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
-
-</div>
-<div onclick="showBlock('block2')">La France </div>
-</div>
-<div id="block2" class="hide-me-first"> Malheureusement oui
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
-
-</div>
-  
   <h2> Qu'en est-il des gouvernements ?</h2>
-  <p> Question 2 : Entre 2005 et 2015, la part de femmes ministres a-t-elle augmenté au sein de l'UE ? </p>
+  <div class="question" id='question2'>
+    <h2> Question 2 : Entre 2005 et 2015, la part de femmes ministres a-t-elle augmenté au sein de l'UE ? </h2>
+    <button class='button -salmon center' onclick= "showBlock('answer1')">Oui, nous sommes presque à parité.</button>
+    <button class='button -salmon center' onclick= "showBlock('answer2')">Non, elle est restée constante.</button>
+    <button class='button -salmon center' onclick= "showBlock('answer3')">Oui, elle a légèrement augmenté.</button>
 
- 
-  <button class='button -salmon center' onclick= "showBlock('answer1')">Oui, nous sommes presque à parité.</button>
-  <button class='button -salmon center' onclick= "showBlock('answer2')">Non, elle est restée constante.</button>
-  <button class='button -salmon center' onclick= "showBlock('answer3')">Oui, elle a légèrement augmenté.</button>
-  
-<div id="answer1" class ="hide-me-first">
- Faux ! On est encore loin de la parité au niveau européen avec en moyenne 27% de ministres femmes au sein des gouvernements. </b>
- La France en revanche est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/>
-     <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
-</div>  
-<div id="answer2" class ="hide-me-first">
- Faux ! Il y a eu une (très légère) légère augmentation de 6 points de pourcentage, pour arriver en 2015 à 27% de ministres femmes au sein des gouvernements. </b>
- La France en revanche est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/>
-     <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
-</div>
-<div id="answer3" class ="hide-me-first">
- Juste ! Il y a eu une (très légère) légère augmentation de 6 points de pourcentage, pour arriver en 2015 à 27% de ministres femmes au sein des gouvernements. </b>
- La France en revanche est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/>
-     <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
-</div>   
-  
-   <p> Question 3 : Activité hors-salariale comprise, les femmes travaillent en moyenne 58h par semaine, soit 8h de plus que les hommes. 
-   D'après vous, combien d'heures sont rémunérées ? </p>
+    <div id="answer1" class ="hide-me-first">
+     Faux ! On est encore loin de la parité au niveau européen avec en moyenne 27% de ministres femmes au sein des gouvernements. </b>
+     La France en revanche est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/>
+         <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
+    </div>
+    <div id="answer2" class ="hide-me-first">
+     Faux ! Il y a eu une (très légère) légère augmentation de 6 points de pourcentage, pour arriver en 2015 à 27% de ministres femmes au sein des gouvernements. </b>
+     La France en revanche est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/>
+         <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
+    </div>
+    <div id="answer3" class ="hide-me-first">
+     Juste ! Il y a eu une (très légère) légère augmentation de 6 points de pourcentage, pour arriver en 2015 à 27% de ministres femmes au sein des gouvernements. </b>
+     La France en revanche est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/>
+         <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
+    </div>
+  </div>
+  <div class="question" id='question3'>
+     <h2> Question 3 : Activité hors-salariale comprise, les femmes travaillent en moyenne 58h par semaine, soit 8h de plus que les hommes.
+     D'après vous, combien d'heures sont rémunérées ? </h2>
+     <div onclick="showBlock('block3')">81%, les femmes ne travaillent pas pour rien !</div>
+     <div id="block3" class="hide-me-first"> Eh non, c'est étonnament le pays avec le moins de différence !
+       <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
+     <div onclick="showBlock('block4')">60%</div>
+     <div id="block4" class="hide-me-first"> Malheureusement oui
+       <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
+  </div>
 
-  <div>
-<div onclick="showBlock('block3')">81%, les femmes ne travaillent pas pour rien !</div>
-</div>
-<div id="block3" class="hide-me-first"> Eh non, c'est étonnament le pays avec le moins de différence !
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
+  <h2> Intéressons-nous au temps libre </h2>
+  <div class="question" id='question4'>
+    <h2> Question 4 : D'après vous, quelle est la différence de temps accordé aux loisirs entre femmes et hommes ? </h2>
+    <button class='button -salmon center' id= "button4">50% de moins pour les femmes</button>
+    <button class='button -salmon center' onclick= "showBlock('answer5')">Plus ou moins égal</button>
+    <button class='button -salmon center' onclick= "showBlock('answer6')">10% de plus pour les femmes</button>
+    <div id="answer4" class ="hide-me-first"> Juste ! Impressionnant, n'est-ce pas ?</b>
+      <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> </b>
+      Parallèlement, les femmes consacrent <font color = "#f960b9"> 70% </font> de leur temps libre au foyer, contre moins de 50% pour les hommes..</div>
+    <div id="answer5" class ="hide-me-first">Faux !  </b>
+      <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> </b>
+      Impressionnant, n'est-ce pas ? </b>
+      Parallèlement, les femmes consacrent <font color = "#f960b9"> 70% </font> de leur temps libre au foyer, contre moins de 50% pour les hommes..</div>
+    <div id="answer5" class ="hide-me-first">
+      Faux ! </b>
+      <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> </b>
+      Impressionnant, n'est-ce pas ? </b>
+      Parallèlement, les femmes consacrent <font color = "#f960b9"> 70% </font> de leur temps libre au foyer, contre moins de 50% pour les hommes..
+    </div>
+  </div>
 
-</div>
-<div onclick="showBlock('block4')">60%</div>
-</div>
-<div id="block4" class="hide-me-first"> Malheureusement oui
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
 
-</div>
 
-<h2> Intéressons-nous au temps libre </h2>
+  <div class="question" id='question5'>
+    <h2> Question 5 : Et au niveau de l'éducation, les femmes sont-elles autant diplomées que les hommes au niveau européen ? </h2>
+    <div onclick="showBlock('block6')">Oui, elles sont autant diplômées</div>
+    <div id="block6" class="hide-me-first"> Eh oui, car la part accordée au foyer est bien plus importante !
+    <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
+    <div onclick="showBlock('block7')">Non, elles le sont moins</div>
+    <div id="block7" class="hide-me-first"> Malheureusement oui
+      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
+    <div onclick="showBlock('block7')">Oui, elles le sont même plus !</div>
+    <div id="block7" class="hide-me-first"> Malheureusement oui
+      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
+  </div>
+  <div class="question" id='question5'>
+    <h2> Question 6 : En résumé, quels sont les pays où il fait bon vivre pour les femmes selon les thématiques suivantes ? </h2>
+    <div onclick="showBlock('block6')"> Salaire et travail </div>
+    <div id="block6" class="hide-me-first"> Eh oui, car la part accordée au foyer est bien plus importante !
+      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
+    <div onclick="showBlock('block7')"> Santé </div>
+    <div id="block7" class="hide-me-first"> Malheureusement oui
+      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
+    <div onclick="showBlock('block7')"> Temps libre </div>
+    <div id="block7" class="hide-me-first"> Malheureusement oui
+      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
+    <div onclick="showBlock('block7')"> Pouvoir </div>
+    <div id="block7" class="hide-me-first"> Malheureusement oui
+      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
 
-    <p> Question 4 : D'après vous, quelle est la différence de temps accordé aux loisirs entre femmes et hommes ? </p>
-  
- <button class='button -salmon center' id= "button4">50% de moins pour les femmes</button>
-<button class='button -salmon center' onclick= "showBlock('answer5')">Plus ou moins égal</button>
-<button class='button -salmon center' onclick= "showBlock('answer6')">10% de plus pour les femmes</button>
 
-<div id="answer4" class ="hide-me-first">
- Juste ! Impressionnant, n'est-ce pas ?</b>
- <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> </b>
- Parallèlement, les femmes consacrent <font color = "#f960b9"> 70% </font> de leur temps libre au foyer, contre moins de 50% pour les hommes..
-</div>
-
-<div id="answer5" class ="hide-me-first">
- Faux !  </b>
- <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> </b>
- Impressionnant, n'est-ce pas ? </b> 
- Parallèlement, les femmes consacrent <font color = "#f960b9"> 70% </font> de leur temps libre au foyer, contre moins de 50% pour les hommes..
-</div>
-
-<div id="answer5" class ="hide-me-first">
- Faux ! </b>
- <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> </b>
- Impressionnant, n'est-ce pas ? </b>
- Parallèlement, les femmes consacrent <font color = "#f960b9"> 70% </font> de leur temps libre au foyer, contre moins de 50% pour les hommes..
-</div>
-
-    <p> Question 5 : Et au niveau de l'éducation, les femmes sont-elles autant diplomées que les hommes au niveau européen ? </p>
-
-   <div>
-<div onclick="showBlock('block6')">Oui, elles sont autant diplômées</div>
-</div>
-<div id="block6" class="hide-me-first"> Eh oui, car la part accordée au foyer est bien plus importante !
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
-
-</div>
-<div onclick="showBlock('block7')">Non, elles le sont moins</div>
-</div>
-<div id="block7" class="hide-me-first"> Malheureusement oui
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
-
-</div>
-
-<div onclick="showBlock('block7')">Oui, elles le sont même plus !</div>
-</div>
-<div id="block7" class="hide-me-first"> Malheureusement oui
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
-
-</div>
-
-<p> Question 6 : En résumé, quels sont les pays où il fait bon vivre pour les femmes selon les thématiques suivantes ? </p>
-   <div>
-<div onclick="showBlock('block6')"> Salaire et travail </div>
-</div>
-<div id="block6" class="hide-me-first"> Eh oui, car la part accordée au foyer est bien plus importante !
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
-
-</div>
-<div onclick="showBlock('block7')"> Santé </div>
-</div>
-<div id="block7" class="hide-me-first"> Malheureusement oui
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
-
-</div>
-
-<div onclick="showBlock('block7')"> Temps libre </div>
-</div>
-<div id="block7" class="hide-me-first"> Malheureusement oui
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
-
-</div>
-
-<div onclick="showBlock('block7')"> Pouvoir </div>
-</div>
-<div id="block7" class="hide-me-first"> Malheureusement oui
-  <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/>
-
-</div>
-
- 
  <a class="link wipe" href="#">wipe</a>
 <a class="link underline" href="#">underline</a>
 <a id="slide-link" class="link slide" href="#"><span>slide</span></a>
 <a class="link opacity" href="#">opacity</a>
   <script src="https://d3js.org/d3.v4.min.js"></script>
 </section>
-   
+
    <section>
       <h2>Avec des interfaces en ligne</h2>
       <h3>Chartblocks</h3>
@@ -178,9 +137,10 @@
         </div>
       </div>
       <hr>
-    
+
  <section>
     <h2>Nos données avec des interfaces en ligne</h2>
       <h3>Chartblocks</h3>
       <iframe width="800" height="450" src="//embed.chartblocks.com/1.0/?c=5aa140a41ea0f6af6407b02b&t=650ec56b098f296" frameBorder="0"></iframe>
-      <hr>
+</body>
+</html>

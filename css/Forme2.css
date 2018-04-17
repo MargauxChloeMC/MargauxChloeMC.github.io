@@ -1,0 +1,98 @@
+/* you can import CSS from other pens - we'll import color and typography styles from this pen */
+@import url(//codepen.io/team/codepen/pen/NxwJpr.css);
+html,body {
+  padding: 30px;
+  /*background-color: #ffe4e1;*/
+  background-color: transparent;
+  background-image: url(gender12.png);
+  background-repeat: repeat;
+  background-attachment:fixed;
+  background-size: contain;
+  background-position: center center;
+  background-size: 70px 70px;
+  color: #666;
+}
+
+#header h1 {
+  font-size: 3em;
+  font-family: Trebuchet MS;
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  -webkit-font-smoothing: antialiased;
+  color: black;
+}
+
+#header_info {
+  margin: 0;
+  padding: 5px;
+  color: #666;
+  width: 40%;
+  min-width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  -webkit-font-smoothing: antialiased;
+}
+
+.question {
+  text-align: center;
+  color: black;
+  margin: 0;
+  padding: 5px;
+  margin-bottom: 10%;
+  width: 100%;
+  background:rgba(255,255,255,0.9);
+  -webkit-font-smoothing: antialiased;
+}
+.question h2 {
+  margin-bottom: 2%;
+  width: 100%;
+  padding: 1%;
+  border-top: 4px solid #E6E6E6;
+  border-bottom: 4px solid #E6E6E6;
+  font-family: arial, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ghost-button {
+    color:#ff3399;/* #009688;*/
+    background: #fff;
+    border: 1px solid #ff3399;/*#009688;*/
+    font-size: 17px;
+    padding: 7px 12px;
+    font-weight: normal;
+    margin: 6px 0;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 120px;
+
+}
+
+.ghost-button:hover, .ghost-button:active {
+  color:#fff;
+  background:#ff3399/*#009688;*/
+}
+
+.hide-me-first {
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  color: black;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+#ans1, #ans3, #ans4, #ans5, #ans8, #ans9, #ans10, #ans12, #ans13, #ans14 {
+  background:rgba(255, 0, 0, 0.4); /*red with opacity*/
+  color: white;
+}
+
+#ans2, #ans6, #ans7, #ans11, #ans15 {
+  /*background:rgba(0, 255, 0, 0.4); /*green with opacity*/
+  background:hsla(120,100%,75%,0.3);/*green with opacity*/
+  color: Black;
+}

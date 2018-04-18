@@ -1,158 +1,205 @@
 <!DOCTYPE html>
 <html>
-<html>
 <head>
-    <link rel=stylesheet type="text/css" href="css/Forme.css">
+    <link rel=stylesheet type="text/css" href="css/Forme2.css">
     <meta charset="utf-8" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117762479-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117762479-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-  gtag('config', 'UA-117762479-1');
-</script>
+	  gtag('config', 'UA-117762479-1');
+	</script>
     <title>Inégalités Hommes/Femmes en Europe</title>
 </head>
-<script src="Script.js"></script>
-    
-
-    
 <body>
+<script src="Script.js" type="text/javascript"></script>
 <div id='header'>
+
   <h1>Inégalités Hommes/Femmes en Europe : Que savez-vous réellement ?</h1>
   <div id='header_info'>
     <p>Les inégalités Homme/Femmes constituent un sujet très courant. A tel point qu'il en devient barbant.
-    Mais que savez-vous précisemment ? <br/><strong>Faites le test pour le savoir !</strong> </p>
-
+    Mais que savez-vous précisemment ? <br/><strong>Faites le test pour le savoir !</strong> <br/></p>
   </div>
+
 </div>
-<section class="links">
-  <!-- you can include the HTML from other pens in your pen -->
+
+<div id='main'>
+
   <div class="question" id="question1">
     <h2> Question 1: Selon vous, quel est le pays avec le plus grand écart de salaire moyen Hommes/Femmes, hors secteur public ?</h2>
-    <button class='button -salmon center' onclick= "showBlock('answer1')">Malte, car c'est un pays de machos</button>
-    <button class='button -salmon center' onclick= "showBlock('answer2')">La France </button>
-    <button class='button -salmon center' onclick= "showBlock('answer3')">La Bulgarie</button>
-    <!-- <div onclick="showBlock('block1')">Malte, car c'est un pays de machos</div>
-    <div id="block1" class="hide-me-first"> Eh non, c'est étonnament le pays avec le moins de différence !
-    <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-    <div onclick="showBlock('block2')">La France </div>
-    <div id="block2" class="hide-me-first"> Malheureusement oui
-    <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div> -->
-  </div>
 
-  <h2> Qu'en est-il des gouvernements ?</h2>
-  <div class="question" id='question2'>
-    <h2> Question 2 : Entre 2005 et 2015, la part de femmes ministres a-t-elle augmenté au sein de l'UE ? </h2>
-    <button class='button -salmon center' onclick= "showBlock('answer1')">Oui, nous sommes presque à parité.</button>
-    <button class='button -salmon center' onclick= "showBlock('answer2')">Non, elle est restée constante.</button>
-    <button class='button -salmon center' onclick= "showBlock('answer3')">Oui, elle a légèrement augmenté.</button>
+      <!-- BUTTONS Q1 -->
+      <button id='b1' class="ghost-button" href="#" onclick="showBlock('ans1','b2','b3','b2')">Malte, car c'est un pays de macho</button>
+      <button id='b2' class="ghost-button" href="#" onclick="showBlock('ans2','b1','b3','b2')">La France</button>
+      <button id='b3' class="ghost-button" href="#" onclick="showBlock('ans3','b1','b2','b2')">La Bulgarie</button>
 
-    <div id="answer1" class ="hide-me-first">
-     Faux ! On est encore loin de la parité au niveau européen avec en moyenne 27% de ministres femmes au sein des gouvernements. </b>
-     La France en revanche est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/>
-         <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
-    </div>
-    <div id="answer2" class ="hide-me-first">
-     Faux ! Il y a eu une (très légère) légère augmentation de 6 points de pourcentage, pour arriver en 2015 à 27% de ministres femmes au sein des gouvernements. </b>
-     La France en revanche est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/>
-         <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
-    </div>
-    <div id="answer3" class ="hide-me-first">
-     Juste ! Il y a eu une (très légère) légère augmentation de 6 points de pourcentage, pour arriver en 2015 à 27% de ministres femmes au sein des gouvernements. </b>
-     La France en revanche est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/>
-         <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
-    </div>
-  </div>
-  <div class="question" id='question3'>
-     <h2> Question 3 : Activité hors-salariale comprise, les femmes travaillent en moyenne 58h par semaine, soit 8h de plus que les hommes.
-     D'après vous, combien d'heures sont rémunérées ? </h2>
-     <div onclick="showBlock('block3')">81%, les femmes ne travaillent pas pour rien !</div>
-     <div id="block3" class="hide-me-first"> Eh non, c'est étonnament le pays avec le moins de différence !
-       <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-     <div onclick="showBlock('block4')">60%</div>
-     <div id="block4" class="hide-me-first"> Malheureusement oui
-       <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-  </div>
-
-  <h2> Intéressons-nous au temps libre </h2>
-  <div class="question" id='question4'>
-    <h2> Question 4 : D'après vous, quelle est la différence de temps accordé aux loisirs entre femmes et hommes ? </h2>
-    <button class='button -salmon center' id= "button4">50% de moins pour les femmes</button>
-    <button class='button -salmon center' onclick= "showBlock('answer5')">Plus ou moins égal</button>
-    <button class='button -salmon center' onclick= "showBlock('answer6')">10% de plus pour les femmes</button>
-    <div id="answer4" class ="hide-me-first"> Juste ! Impressionnant, n'est-ce pas ?</b>
-      <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> </b>
-      Parallèlement, les femmes consacrent <font color = "#f960b9"> 70% </font> de leur temps libre au foyer, contre moins de 50% pour les hommes..</div>
-    <div id="answer5" class ="hide-me-first">Faux !  </b>
-      <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> </b>
-      Impressionnant, n'est-ce pas ? </b>
-      Parallèlement, les femmes consacrent <font color = "#f960b9"> 70% </font> de leur temps libre au foyer, contre moins de 50% pour les hommes..</div>
-    <div id="answer5" class ="hide-me-first">
-      Faux ! </b>
-      <iframe  id="img10" style="border: 0; width:100%; height: 500px; overflow: auto;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> </b>
-      Impressionnant, n'est-ce pas ? </b>
-      Parallèlement, les femmes consacrent <font color = "#f960b9"> 70% </font> de leur temps libre au foyer, contre moins de 50% pour les hommes..
-    </div>
-  </div>
-
-
-
-  <div class="question" id='question5'>
-    <h2> Question 5 : Et au niveau de l'éducation, les femmes sont-elles autant diplomées que les hommes au niveau européen ? </h2>
-    <div onclick="showBlock('block6')">Oui, elles sont autant diplômées</div>
-    <div id="block6" class="hide-me-first"> Eh oui, car la part accordée au foyer est bien plus importante !
-    <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-    <div onclick="showBlock('block7')">Non, elles le sont moins</div>
-    <div id="block7" class="hide-me-first"> Malheureusement oui
-      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-    <div onclick="showBlock('block7')">Oui, elles le sont même plus !</div>
-    <div id="block7" class="hide-me-first"> Malheureusement oui
-      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-  </div>
-  <div class="question" id='question5'>
-    <h2> Question 6 : En résumé, quels sont les pays où il fait bon vivre pour les femmes selon les thématiques suivantes ? </h2>
-    <div onclick="showBlock('block6')"> Salaire et travail </div>
-    <div id="block6" class="hide-me-first"> Eh oui, car la part accordée au foyer est bien plus importante !
-      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-    <div onclick="showBlock('block7')"> Santé </div>
-    <div id="block7" class="hide-me-first"> Malheureusement oui
-      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-    <div onclick="showBlock('block7')"> Temps libre </div>
-    <div id="block7" class="hide-me-first"> Malheureusement oui
-      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-    <div onclick="showBlock('block7')"> Pouvoir </div>
-    <div id="block7" class="hide-me-first"> Malheureusement oui
-      <img id="img1" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/5ae56488-30c4-4b4c-b5ff-9cfc633920cf/640_le_blob.jpg"/></div>
-
-
- <a class="link wipe" href="#">wipe</a>
-<a class="link underline" href="#">underline</a>
-<a id="slide-link" class="link slide" href="#"><span>slide</span></a>
-<a class="link opacity" href="#">opacity</a>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-</section>
-
-   <section>
-      <h2>Avec des interfaces en ligne</h2>
-      <h3>Chartblocks</h3>
-      <iframe width="800" height="450" src="//embed.chartblocks.com/1.0/?c=5a7c57349973d22c238eb388&t=76441a7e6bdc1e7" frameBorder="0"></iframe>
-      <hr>
-      <h3>Infogram</h3>
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md">
-            <script id="infogram_0_b6f1b843-4f80-44d2-b19b-8813cb447c38" title="Step by Step Charts" src="https://e.infogram.com/js/dist/embed.js?UXJ" type="text/javascript"></script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/b6f1b843-4f80-44d2-b19b-8813cb447c38" style="color:#989898!important;text-decoration:none!important;" target="_blank">Step by Step Charts</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
-          </div>
-        </div>
+      <!-- ANSWERS Q1 -->
+      <div class ="hide-me-first" id="ans1">
+          <p><FONT face="Verdana"><B>Faux !</p></font></B>
       </div>
-      <hr>
 
- <section>
-    <h2>Nos données avec des interfaces en ligne</h2>
-      <h3>Chartblocks</h3>
-      <iframe width="800" height="450" src="//embed.chartblocks.com/1.0/?c=5aa140a41ea0f6af6407b02b&t=650ec56b098f296" frameBorder="0"></iframe>
+      <div class ="hide-me-first" id="ans2">
+          <p><FONT face="Verdana"><B>Vrai !</p></font></B>
+      </div>
+
+      <div class ="hide-me-first" id="ans3">
+          <p><FONT face="Verdana"><B>Faux !</p></font></B>
+      </div>
+
+
+  </div>
+
+  <div class="question" id="question2">
+    <h2> Question 2 : Entre 2005 et 2015, la part de femmes ministres a-t-elle augmenté au sein de l'UE ?</h2>
+
+      <!-- BUTTONS Q2 -->
+      <button id='b4' class="ghost-button" href="#" onclick="showBlock('ans4','b5','b6','b6')">Non, elle est restée constante.</button>
+      <button id='b5' class="ghost-button" href="#" onclick="showBlock('ans5','b4','b6','b6')">Oui, nous sommes presque à parité.</button>
+      <button id='b6' class="ghost-button" href="#" onclick="showBlock('ans6','b4','b5','b6')">Oui, elle a légèrement augmenté.</button>
+
+      <!-- ANSWERS Q2 -->
+      <div class ="hide-me-first" id="ans4">
+       <p><FONT face="Verdana"><B>Faux ! </B> Il y a eu une petite augmentation de 6 points de pourcentage pour arriver en 2015 à <B><font color = "#f960b9"> 27% de ministres femmes</B></font> au sein des gouvernements. </b>
+       Notons en revanche que la <B><font color = "#f960b9"> France </B></font> est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/></p></font>
+           <iframe  id="img10" style="border: 0;overflow:auto; height:250px;width:75%;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
+      </div>
+
+      <div class ="hide-me-first" id="ans5">
+       <p><FONT face="Verdana"><B>Faux ! </B> Nous sommes bien loin de la parité avec une (très) légère augmentation de 6 points de pourcentage, pour arriver en 2015 à <B><font color = "#f960b9"> 27% de ministres femmes </B> </font> au sein des gouvernements. </b>
+       Notons en revanche que la <B><font color = "#f960b9">France</B></font> est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/></p></font>
+           <iframe  id="img10" style="border: 0;overflow:auto; height:250px;width:75%;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
+      </div>
+
+      <div class ="hide-me-first" id="ans6">
+      <p><FONT face="Verdana"><B>Juste ! </B> Il y a eu une (très) légère augmentation de 6 points de pourcentage, pour arriver en 2015 à <B><font color = "#f960b9">27% de ministres femmes </B> </font> au sein des gouvernements. </b>
+        Notons que la <B><font color = "#f960b9">France</B></font> est une bonne élève en la matière. Les différentes lois semblent avoir porté leurs fruits, pourquoi ne pas les appliquer au niveau européen ? <br/></p></font>
+            <iframe  id="img10" style="border: 0;overflow:auto; height:250px;width:75%;" src="https://datawrapper.dwcdn.net/ZhnXM/1/"/> </iframe>
+      </div>
+
+  </div>
+
+  <div class="question" id="question3">
+    <h2> Question 3 : Activité hors-salariale comprise, les femmes travaillent en moyenne 58h par semaine, soit 8h de plus que les hommes.
+    D'après vous, combien d'heures sont rémunérées ? </h2>
+      <!-- BUTTONS Q3 -->
+      <button id='b7' class="ghost-button" href="#" onclick="showBlock('ans7','b8','b9','b7')">60%</button>
+      <button id='b8' class="ghost-button" href="#" onclick="showBlock('ans8','b7','b9','b7')">70%</button>
+      <button id='b9' class="ghost-button" href="#" onclick="showBlock('ans9','b7','b8','b7')">81%, les femmes ne travaillent pas pour rien !</button>
+
+      <!-- ANSWERS Q3 -->
+      <div class ="hide-me-first" id="ans7">
+          <p><FONT face="Verdana"><B>Vrai !</p></font></B>
+      </div>
+
+      <div class ="hide-me-first" id="ans8">
+          <p><FONT face="Verdana"><B>Faux !</p></font></B>
+      </div>
+
+      <div class ="hide-me-first" id="ans9">
+          <p><FONT face="Verdana"><B>Faux !</p></font></B>
+      </div>
+  </div>
+
+  <div class="question" id="question4">
+    <h2> Question 4 : D'après vous, quelle est la différence de temps accordé aux loisirs entre femmes et hommes ? </h2>
+      <!-- BUTTONS Q4 -->
+      <button id='b10' class="ghost-button" href="#" onclick="showBlock('ans10','b11','b12','b11')">Plus ou moins égal</button>
+      <button id='b11' class="ghost-button" href="#" onclick="showBlock('ans11','b10','b12','b11')">50% de moins pour les femmes</button>
+      <button id='b12' class="ghost-button" href="#" onclick="showBlock('ans12','b10','b11','b11')">10% de plus pour les femmes</button>
+
+      <!-- ANSWERS Q4 -->
+      <div class ="hide-me-first" id="ans10">
+          <p><FONT face="Verdana"><B>Faux !</font> </p></B>
+          <iframe  id="img10" style="border: 0;overflow:auto; height:150px;width:50%;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> 
+      <p><FONT face="Verdana">Alors, loin de l'égalité, n'est-ce pas ? </b> Parallèlement, les femmes consacrent <B><font color = "#f960b9"> 70% de leur temps libre au foyer </font></B> (cuisine, nettoyage, prise en charge des enfants et des aînés), contre moins de 50% pour les hommes..</font></p>
+      </div>
+
+      <div class ="hide-me-first" id="ans11">
+          <p><FONT face="Verdana"><B>Juste !</B> Impressionnant, n'est-ce pas ?</p></font>
+          <iframe  id="img10" style="border: 0;overflow:auto; height:200px;width:50%;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> 
+        <p><FONT face="Verdana">Parallèlement, les femmes consacrent <B><font color = "#f960b9"> 70% de leur temps libre au foyer </font></B> (cuisine, nettoyage, prise en charge des enfants et des aînés), contre moins de 50% pour les hommes.</p></font>
+      </div>
+
+      <div class ="hide-me-first" id="ans12">
+          <p><FONT face="Verdana"><B>Faux !</p></font></B>
+		  <iframe  id="img10" style="border: 0;overflow:auto; height:200px;width:50%;" src="https://infogram.com/temps-libre-1h9j6qmm11z54gz"/> </iframe> 
+        <p><FONT face="Verdana">Impressionnant, n'est-ce pas ? </b> Parallèlement, les femmes consacrent <B> <font color = "#f960b9"> 70% de leur temps libre au foyer </font></B>  (cuisine, nettoyage, prise en charge des enfants et des aînés), contre moins de 50% pour les hommes..</p></font>
+      </div>
+  </div>
+
+  <div class="question" id="question5">
+    <h2> Question 5 : Et au niveau de l'éducation, les femmes sont-elles autant diplomées que les hommes au niveau européen ? </h2>
+      <!-- BUTTONS Q5 -->
+      <button id='b13' class="ghost-button" href="#" onclick="showBlock('ans13','b14','b15','b15')">Non, elles le sont moins</button>
+      <button id='b14' class="ghost-button" href="#" onclick="showBlock('ans14','b13','b15','b15')">Oui, elles sont aussi diplômées</button>
+      <button id='b15' class="ghost-button" href="#" onclick="showBlock('ans15','b13','b14','b15')">Oui, elles le sont même plus !</button>
+
+      <!-- ANSWERS Q5 -->
+      <div class ="hide-me-first" id="ans13">
+       <p><FONT face="Verdana"><B>Faux! </B>Regardez donc la différence (en %) entre les femmes et les hommes ayant obtenus un diplôme de l'enseignement supérieur pour chaque pays européen : </p></font>
+       <iframe  id="img11" style="border: 0; overflow:auto;" src="https://infogram.com/carte-education-1h9j6qmwdmn54gz"/> </iframe> 
+       <p><FONT face="Verdana">Félicitations aux femmes des pays nordiques qui arrivent en tête en 2015 !</p></font>
+      </div>
+
+      <div class ="hide-me-first" id="ans14">
+       <p><FONT face="Verdana"><B>Faux!</B> Regardez donc la différence (en %) entre les femmes et les hommes ayant obtenus un diplôme de l'enseignement supérieur pour chaque pays européen :</p></font>
+       <iframe  id="img11" style="border: 0; overflow:auto;" src="https://infogram.com/carte-education-1h9j6qmwdmn54gz"/> </iframe> 
+       <p><FONT face="Verdana">Félicitations aux femmes des pays nordiques qui arrivent en tête en 2015 !</p></font>
+      </div>
+
+      <div class ="hide-me-first" id="ans15">
+        <p><FONT face="Verdana"><B>Vrai!</B> Regardez donc la différence (en %) entre les femmes et les hommes ayant obtenus un diplôme de l'enseignement supérieur pour chaque pays européen :</p></font>
+        <iframe  id="img11" style="border: 0; overflow:auto;" src="https://infogram.com/carte-education-1h9j6qmwdmn54gz"/> </iframe> 
+        <p><FONT face="Verdana">Félicitations aux femmes des pays nordiques qui arrivent en tête en 2015 !</p></font>
+      </div>
+
+      
+  </div>
+
+  <div class="question" id="question6">
+    <h2> Question 6 : En résumé, quels sont les pays où il fait bon vivre pour les femmes selon les thématiques suivantes ?  </h2>
+      <!-- BUTTONS Q6 -->
+      <button id='b16' class="ghost-button" href="#" onclick="showMap('ans16','ans17','ans18','ans19')">Salaire et travail </button>
+      <button id='b17' class="ghost-button" href="#" onclick="showMap('ans17','ans16','ans18','ans19')"> Santé </button>
+      <button id='b18' class="ghost-button" href="#" onclick="showMap('ans18','ans16','ans17','ans19')"> Temps libre </button>
+      <button id='b19' class="ghost-button" href="#" onclick="showMap('ans19','ans16','ans17','ans18')"> Pouvoir </button>
+      <!-- ANSWERS Q6 -->
+      <div class ="hide-me-first" id="ans16">
+       <iframe  id="img11" style="border: 0; overflow:auto; height :500px;width:;" src="https://infogram.com/carte-travail-1h1749d8r08q6zj"/> </iframe> 
+       <p><FONT face="Verdana">Vous feriez bien de préparer vos doudounes, il semblerait que vous devriez aller dans le nord de l'Europe!</p></font>
+      </div>
+
+      <div class ="hide-me-first" id="ans17">
+       <iframe  id="img11" style="border: 0; overflow:auto; height :500px;width:100%;" src="https://infogram.com/carte-sante-1hnq41x1y17k23z"/> </iframe> 
+       <p><FONT face="Verdana">Si ce critère vous importe, vous serez ravis d'apprendre que si vous regardez dans le détail, il fait bon vivre dans tous les pays d'Europe !</b>
+           En effet, même les pays en rouge possède un indice supérieur à 70%. C'est le domaine pour lequel les inégalités sont les moins présentes. </p></font>
+      </div>
+
+      <div class ="hide-me-first" id="ans18">
+        <iframe  id="img11" style="border: 0; overflow:auto; height :500px;width:100%;" src="https://infogram.com/carte-temps-libre-1h0r6r8koqxl4ek"/> </iframe> 
+       <p><FONT face="Verdana">Les pays du nord de l'Europe l'emportent concernant le temps libre tandis que les pays de l'Est ont un indice presque de moitié inférieur!</p></font>
+      </div>
+
+      <div class ="hide-me-first" id="ans19">
+        <iframe  id="img11" style="border: 0; overflow:auto; height :500px;width:100%;" src="https://infogram.com/carte-pouvoir-1hxj48r80ze56vg"/> </iframe> 
+       <p><FONT face="Verdana">Comme évoqué plus tôt dans le questionnaire, concernant le pouvoir, la France fait parti des bons élèves et même des meilleurs!</p></font>
+      </div>
+  </div>
+  
+  <div class="question" id="source">
+	<h2> Pour plus d'informations...</h2>
+  <!-- Source des donnees -->
+  <button id='b20' class="ghost-button" href="#" onclick="showBlock('ans20','b20','b20','b20')">Source des données</button>
+   <div class ="hide-me-first" id="ans20">
+        <img src="https://pbs.twimg.com/media/DalN7jNXkAA57Jf.jpg" style="width:300px;height:200px;"/>  
+       <p><FONT face="Verdana">Les données sont issues du site de l'European Institute for Gender Equality. Elles regroupent 31 mesures différentes par genre, récoltées entre 2005 et 2015 pour les 28 pays de l'Union Européenne.</p></font>
+      </div>
+  </div>
+</div>
+
 </body>
 </html>
+

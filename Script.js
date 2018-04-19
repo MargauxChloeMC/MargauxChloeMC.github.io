@@ -33,6 +33,9 @@
 //     $("#answer3").toggle();
 // });
 
+function showBlock_intro(imageId) {
+   document.getElementById(imageId).style.display = "block";
+}
 function showBlock(imageId1,bt1,bt2,right_answer) {
    document.getElementById(imageId1).style.display = 'block'; // show answer
    document.getElementById(bt1).disabled=true; // desactivate other buttons

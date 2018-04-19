@@ -1,8 +1,7 @@
 /* you can import CSS from other pens - we'll import color and typography styles from this pen */
 @import url(//codepen.io/team/codepen/pen/NxwJpr.css);
 html,body {
-  padding: 30px;
-  /*background-color: #ffe4e1;*/
+  padding: 5px;
   background-color: transparent;
   background-image: url(gender12.png);
   background-repeat: repeat;
@@ -11,21 +10,30 @@ html,body {
   background-position: center center;
   background-size: 70px 70px;
   color: #666;
+  margin: 5em;
 }
 
 #header h1 {
   font-size: 3em;
   font-family: Trebuchet MS;
+  /*font-family: 'Open Sans', sans-serif;*/
   text-align: center;
   background: rgba(255,255,255,0.9);
   -webkit-font-smoothing: antialiased;
   color: black;
+  border-top: 3px solid #ff3399;
+  border-bottom: 3px solid #ff3399;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 #header_info {
-  margin: 0;
+  margin-bottom: 30px;
   padding: 5px;
-  color: #666;
+  /*color: #666;*/
+  color : black;
+  font-family: 'Bradley Hand', cursive;
+  font-size: 120%;
   width: 40%;
   min-width: 600px;
   height: auto;
@@ -34,6 +42,8 @@ html,body {
   text-align: center;
   background: rgba(255,255,255,0.9);
   -webkit-font-smoothing: antialiased;
+  /*font-family: Verdana, sans-serif;*/
+
 }
 
 .question {
@@ -45,14 +55,15 @@ html,body {
   width: 100%;
   background:rgba(255,255,255,0.9);
   -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
 }
 .question h2 {
   margin-bottom: 2%;
   width: 100%;
-  padding: 1%;
+  padding: 0;
   border-top: 4px solid #E6E6E6;
   border-bottom: 4px solid #E6E6E6;
-  font-family: arial, serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -72,7 +83,7 @@ html,body {
 
 }
 
-.ghost-button:hover, .ghost-button:active {
+.ghost-button:hover, .ghost-button:active,.ghost-button:visited {
   color:#fff;
   background:#ff3399/*#009688;*/
 }
@@ -83,16 +94,39 @@ html,body {
   padding: 50px 0;
   text-align: center;
   color: black;
-  background-color: lightblue;
+  /*background-color: lightblue;*/
+  background-color: transparent;
   margin-top: 20px;
+  font-family: Verdana, sans-serif;
+  align-items: center;
 }
-#ans1, #ans3, #ans4, #ans5, #ans8, #ans9, #ans10, #ans12, #ans13, #ans14 {
-  background:rgba(255, 0, 0, 0.4); /*red with opacity*/
-  color: white;
+#ans1, #ans3, #ans4, #ans6, #ans8, #ans9, #ans10, #ans12, #ans13, #ans14, #ans16, #ans17 {
+  border-top:  solid rgba(255, 0, 0, 0.4); /*red with transperency*/
+  border-bottom:  solid rgba(255, 0, 0, 0.4);
+  border-left: solid rgba(255, 0, 0, 0.4);
+  border-right: solid rgba(255, 0, 0, 0.4);
+  border-left-width: medium;
+  border-right-width: medium;
+  color: black;
+  align-items: center;
+
 }
 
-#ans2, #ans6, #ans7, #ans11, #ans15 {
-  /*background:rgba(0, 255, 0, 0.4); /*green with opacity*/
-  background:hsla(120,100%,75%,0.3);/*green with opacity*/
+#ans2, #ans5, #ans7, #ans11, #ans15, #ans18 {
+  border-top: 20px solid hsla(120,100%,75%,0.3);/*red with transperency*/
+  border-top:  solid hsla(120,100%,75%,0.3); /*red with transperency*/
+  border-bottom:  solid hsla(120,100%,75%,0.3);
+  border-left: solid hsla(120,100%,75%,0.3);
+  border-right: solid hsla(120,100%,75%,0.3);
+  border-left-width: medium;
+  border-right-width: medium;
   color: Black;
+  align-items: center;
+}
+
+.comment {
+  text-align: center;
+  margin-left: 100px;
+  margin-right:100px;
+  color: black;
 }

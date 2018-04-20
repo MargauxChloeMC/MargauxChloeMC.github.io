@@ -130,3 +130,25 @@ html,body {
   margin-right:100px;
   color: black;
 }
+
+.comment {
+  text-align: center;
+  margin-left: 100px;
+  margin-right:100px;
+  color: black;
+}
+
+/*To put two graphs of question 4 on a same row*/
+#first_column,
+#second_column {
+  width: 50%;
+}
+
+#first_column {
+  float:left;
+}
+
+#first_column {
+  float:right;
+}
+

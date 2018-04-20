@@ -40,7 +40,6 @@ function showBlock(imageId1,bt1,bt2,right_answer) {
    document.getElementById(imageId1).style.display = 'block'; // show answer
    document.getElementById(bt1).disabled=true; // desactivate other buttons
    document.getElementById(bt2).disabled=true;
-   //document.getElementById(right_answer).background = #009933; // essayer de mettre en vert le bouton de la vraie réponse
  }
 
  function showMap(answer1,answer2,answer3,answer4){

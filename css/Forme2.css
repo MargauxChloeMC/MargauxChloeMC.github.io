@@ -82,15 +82,15 @@ html,body {
     min-width: 120px;
 
 }
-ghost-button:visited {
+.ghost-button:visited {
   color:#ff3399;
   background-color:#ff3399;
 }
-ghost-button:active{
+.ghost-button:active{
   color:#ff3399;
   background-color:#ff3399;
 }
-ghost-button:hover{
+.ghost-button:hover{
   color:#ff3399;
   background:#ff3399;
 }

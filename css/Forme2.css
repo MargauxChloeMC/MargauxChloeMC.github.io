@@ -83,10 +83,10 @@ html,body {
 
 }
 ghost-button:visited {
-  color:#009688;
+  background-color:#ff3399;
 }
 ghost-button:active{
-  color:#009688;
+  background-color:#ff3399;
 }
 
 /*.ghost-button:hover, .ghost-button:active, ghost-button:visited {

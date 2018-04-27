@@ -82,11 +82,17 @@ html,body {
     min-width: 120px;
 
 }
-
-.ghost-button:hover, .ghost-button:active,.ghost-button:visited {
-  /*color:#fff;*/
-  background-color:#ff3399/*#009688;*/
+ghost-button:visited {
+  background-color:#009688
 }
+ghost-button:active{
+  background-color:#009688
+}
+
+/*.ghost-button:hover, .ghost-button:active, ghost-button:visited {
+  /*color:#fff;*/
+ /* background-color:#ff3399/*#009688;*/
+/*}*/
 
 .hide-me-first {
   display: none;
